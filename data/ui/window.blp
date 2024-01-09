@@ -1,0 +1,20 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $CairoLinesMainWindow : Adw.ApplicationWindow {
+    default-width: 600;
+    default-height: 550;
+    title: "CairoLines";
+    
+    Box {
+        orientation: vertical;
+        
+        Adw.HeaderBar {}
+        
+        DrawingArea area {
+            hexpand: true;
+            vexpand: true;
+        }
+    }
+}
+
